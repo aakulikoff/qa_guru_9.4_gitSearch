@@ -17,7 +17,15 @@ public class gitHubTests {
         $(byLinkText("selenide/selenide")).click();
         $("#wiki-tab").click();
         $(byText("Wiki")).click();
-        $(byText("Soft assertions")).shouldBe(Condition.visible).click();
+        $(byText("Soft assertions"))
+                .shouldBe(Condition.visible)
+                .click();
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"));
+    }
+
+
+    @Test
+    void dragAndDrop() {
+
     }
 }
