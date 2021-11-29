@@ -12,5 +12,6 @@ public class СommitTest {
         open("https://github.com/");
         $(byName("q")).setValue("qaguru").pressEnter();
         $(byName("q")).setValue("selenide").pressEnter();
+        $(byName("q")).setValue("allure").pressEnter();
     }
 }
