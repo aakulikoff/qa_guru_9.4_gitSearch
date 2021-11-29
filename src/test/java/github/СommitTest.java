@@ -13,5 +13,6 @@ public class СommitTest {
         $(byName("q")).setValue("qaguru").pressEnter();
         $(byName("q")).setValue("selenide").pressEnter();
         $(byName("q")).setValue("allure").pressEnter();
+        $(byName("q")).setValue("kulikov").pressEnter();
     }
 }
