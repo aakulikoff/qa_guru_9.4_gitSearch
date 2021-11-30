@@ -1,11 +1,11 @@
 package github;
 
-import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class FindSelenideGitHub {
 
@@ -26,7 +26,7 @@ public class FindSelenideGitHub {
 //        $$("ul.repo-list li").first().$("a").click();
 
         //проверить, что в заголовке встречается selenide/selenide
-        $(("h1"),0).shouldHave(text("selenide / selenide"));
+        $(("h1"), 0).shouldHave(text("selenide / selenide"));
 
         //кликнуть по Wiki
         $("#wiki-tab").click();
